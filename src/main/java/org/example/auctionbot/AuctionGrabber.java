@@ -349,6 +349,7 @@ public class AuctionGrabber {
                             notifiedUuids.add(auctionUuid);
                             logger.info("Found potential flip! Item: {}, Price: {}, Estimated Value: {}, Profit: {}",
                                     name, price, itemTotalEstimatedValue, (itemTotalEstimatedValue - price));
+                            Discord.sendWebhookRequest((int) price, (int) itemTotalEstimatedValue, Discord.getCommand(auctionUuid));
                         }
                     } else {
                         logger.debug("Skipping auction {} due to missing or invalid 'tag' or 'ExtraAttributes' in NBT data (likely not a relevant item).", auctionUuid);
