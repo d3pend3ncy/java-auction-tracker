@@ -1,0 +1,9 @@
+[api]
+hypixel = "YOUR_HYPIXEL_API_KEY_HERE" # <<< IMPORTANT: Replace with your actual Hypixel API key
+page-fetch-delay-ms = 100 # Delay in milliseconds between fetching auction pages (e.g., 1000ms = 1 second)
+
+[options]
+min-time = 300 # Minimum time in seconds for auctions to end (e.g., 5 minutes)
+add-recombobulator = true # Whether to add recombobulator value to item value
+min-profit = 50000 # Minimum profit in coins for a flip to be considered good
+max-price-cap = 1000000 # NEW: Maximum coins you are willing to spend to purchase a BIN item (e.g., 10,000,000 coins)

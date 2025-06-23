@@ -1,0 +1,7 @@
+[api]
+hypixel = "" # <<< IMPORTANT: Replace with your actual Hypixel API key
+
+[options]
+min-time = 300 # Minimum time in seconds for auctions to end (e.g., 5 minutes)
+add-recombobulator = true # Whether to add recombobulator value to item value
+min-profit = 100000 # Minimum profit in coins for a flip to be considered good
